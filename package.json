@@ -21,11 +21,20 @@
   },
   "browserify": {
     "transform": [
-      [ "babelify", { "presets": ["es2015", "react"] } ]
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react"
+          ]
+        }
+      ]
     ]
   },
   "homepage": "https://github.com/jackielii/simplest-redux-example#readme",
   "dependencies": {
+    "immutable": "^3.8.1",
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
     "react-redux": "^4.4.5",
