@@ -4,7 +4,8 @@
   "description": "simplest redux + react example",
   "main": "index.js",
   "scripts": {
-    "start": "watchify --debug --extension=js -o bundle.js index.js & python -m SimpleHTTPServer"
+    "start": "watchify --debug --extension=js -o bundle.js index.js & python -m SimpleHTTPServer",
+    "test": "mocha --compilers js:babel-core/register --recursive"
   },
   "repository": {
     "type": "git",
@@ -45,6 +46,9 @@
     "babel-preset-react": "^6.5.0",
     "babelify": "^7.3.0",
     "browserify": "^13.0.1",
+    "chai": "^3.5.0",
+    "chai-immutable": "^1.6.0",
+    "mocha": "^2.5.3",
     "watchify": "^3.7.0"
   }
 }
