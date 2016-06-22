@@ -2,7 +2,9 @@ import React, { Component, PropTypes } from 'react'
 import ReactDOM from 'react-dom'
 import { createStore } from 'redux'
 import { Provider, connect } from 'react-redux'
-import { increment, decrement } from './core';
+import { increment, decrement, INITIAL_STATE } from './core';
+import {List, Map} from 'immutable';
+
 // React component
 class Counter extends Component {
   render() {
@@ -29,7 +31,7 @@ const increaseAction = { type: 'increase' }
 const decreaseAction = { type: 'decrease' }
 
 // Reducer
-function counter(state = { count: 0 }, action) {
+function counter(state = INITIAL_STATE, action) {
   switch (action.type) {
     case 'increase':
       return increment(state);
@@ -46,7 +48,7 @@ const store = createStore(counter)
 // Map Redux state to component props
 function mapStateToProps(state) {
   return {
-    value: state.count
+    value: state.get('count')
   }
 }
 
