@@ -25,3 +25,7 @@ export function setEco(state) {
                                     .set('eco', !eco);}
   return state.set('eco', !eco);
 }
+
+export function reset(state) {
+ return state.set('temp', 20)
+}
