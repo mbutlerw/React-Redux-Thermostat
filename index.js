@@ -11,7 +11,7 @@ class Counter extends Component {
     const { value, onIncreaseClick, onDecreaseClick } = this.props
     return (
       <div>
-        <span>{value}</span>
+        <span><h1>{value}</h1></span>
         <button onClick={onIncreaseClick}>Increase</button>
         <button onClick={onDecreaseClick}>Decrease</button>
       </div>
@@ -36,7 +36,7 @@ function counter(state = INITIAL_STATE, action) {
     case 'increase':
       return increment(state);
     case 'decrease':
-      return increment(state);
+      return decrement(state);
     default:
       return state
   }
