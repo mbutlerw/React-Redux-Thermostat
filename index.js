@@ -15,7 +15,7 @@ class Counter extends Component {
         <button onClick={onIncreaseClick}>Increase</button>
         <button onClick={onDecreaseClick}>Decrease</button>
         <button onClick={onSetEcoClick}>Eco</button>
-        <span><h1>{eco}</h1></span>
+        <span><h1>ECO: {eco ? "ON" : "OFF"}</h1></span>
       </div>
     )
   }
