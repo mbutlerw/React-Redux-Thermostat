@@ -21,5 +21,7 @@ export function decrement(state) {
 
 export function setEco(state) {
   const eco = state.get('eco')
+  if (state.get('temp') > 25) {return state.set('temp', 25)
+                                    .set('eco', !eco);}
   return state.set('eco', !eco);
 }
