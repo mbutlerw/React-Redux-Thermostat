@@ -43,12 +43,12 @@ function counter(state = INITIAL_STATE, action) {
 }
 
 // Store
-const store = createStore(counter)
+const store = createStore(counter, INITIAL_STATE)
 
 // Map Redux state to component props
 function mapStateToProps(state) {
   return {
-    value: state.get('count')
+    value: state.get('temp')
   }
 }
 
