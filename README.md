@@ -1,4 +1,4 @@
-# Simple Thermometer built in React using Redux and Immutable.js
+# Simple Thermostat built in React using Redux and Immutable.js
 
 ## Instructions
 
