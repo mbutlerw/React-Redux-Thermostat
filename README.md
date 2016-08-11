@@ -1,5 +1,8 @@
 # Simple Thermostat built in React using Redux and Immutable.js
 
+![alt text](https://raw.githubusercontent.com/mbutlerw/react-redux-thermostat/master/Screenshot.png "Screen Shot")
+
+
 Built using [https://github.com/jackielii/simplest-redux-example](https://github.com/jackielii/simplest-redux-example) boilerplate.
 
 ## Instructions
